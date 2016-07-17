@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./css/todo.css">
+</head>
+<body ng-app="mainApp" ng-controller="app">
+    <div id="header">
+        <h1>YQ's TODO List</h1>
+        <h2> Add a task here</h2>
+        <input id="input" ng-model="task"  ng-keyup="searchEnter()" type="text">
+        <span>Press "enter" to add task</span>
+    </div>
+    <div id="taskToShow">
+        <ol>
+            <li ng-repeat="oneTask in tasks track by $index">
+                <input type="checkbox" ng-model="oneTask.status">
+                <span contentEditable="false" ng-dblclick="contentEdit(oneTask.taskMessage)" ng-keydown="enterAgain(oneTask.taskMessage)" ng-model="oneTask.taskMessage" class="done-{{oneTask.status}}">    
+                    {{oneTask.taskMessage}}
+                </span>
+            </li>
+        </ol>
+        <input id="update" type="button" value="update the list" ng-click="update()"/>
+        <input id="remove" type="button" value="remove completed tasks" ng-click="clean()"/>
+    </div>
+</body>
+</html>

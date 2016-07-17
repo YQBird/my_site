@@ -1,0 +1,61 @@
+h1, h2{
+	text-align: center;
+	font-family: "Comic Sans MS", cursive, sans-serif
+}
+
+#input, #header span{
+	display: inline-block; 
+	align:center;
+	padding:5px;
+	font-size:15px;
+}
+
+body{
+	background-image: url(../img/bg_td.jpg);
+	background-size: 100%, 100%;
+}
+#input{
+	margin-left: 40%
+}
+
+span.done-true{
+	color:red;
+	font-family: cursive;
+	text-decoration: line-through;
+}
+span[contenteditable="true"]{
+	background: gray;
+	padding: 3px;
+
+}
+
+#taskToShow ol li{
+	margin-left: 12%;
+	margin-right: 15%;
+	padding-top: 15px;
+    height:50px;
+    border: 1px dashed black;
+
+}
+
+#taskToShow ol li input{
+	width: 50px;
+	margin-left: 15px;
+}
+
+#taskToShow ol li span{
+	vertical-align: center;
+	font-size: 17px;
+	font-family: "Lucida Console", Monaco, monospace;
+}
+
+#update, #remove{
+	margin-top: 50px;
+	height: 50px;
+	width: auto;
+	border:1px solid black;
+	border-radius: 15px;
+	position: relative;
+	left:35%;
+	font-size: 17px;
+}

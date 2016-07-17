@@ -1,0 +1,32 @@
+{
+  "name": "my_site",
+  "version": "1.0.0",
+  "description": "A personal web application",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "connect": "^3.4.1",
+    "connect-flash": "^0.1.1",
+    "ejs": "^2.4.2",
+    "express": "^4.14.0",
+    "express-session": "^1.14.0",
+    "mongodb": "^2.2.1",
+    "mongoose": "^4.5.3",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YQBird/my_site.git"
+  },
+  "author": "Qun Yan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YQBird/my_site/issues"
+  },
+  "homepage": "https://github.com/YQBird/my_site#readme"
+}

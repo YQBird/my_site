@@ -1,0 +1,32 @@
+body {
+  color: #fff;
+  background: url(../img/register_bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.header {
+  text-align: center;
+  margin-bottom: 50px; }
+  .header .container {
+    padding: 30px, 0;
+    border-bottom: 1px solid #e5e5e5; }
+    .header .container img {
+      width: 100px; }
+
+.btn {
+  background: rgba(0, 240, 190, 0.25);
+  margin-top: 30px;
+  margin-bottom: 100px; }
+
+.footer .container {
+  padding: 20px 0;
+  border-top: 1px solid #e5e5e5; }
+  .footer .container ul {
+    margin-left: 0; }
+  .footer .container li {
+    display: inline-block;
+    margin-right: 15px; }
+
+/*# sourceMappingURL=signUp.css.map */

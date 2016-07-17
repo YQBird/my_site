@@ -1,0 +1,33 @@
+body {
+  background: url(../img/register_bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #fff;
+  margin: 0px;
+  padding: 0px; }
+  body .header {
+    text-align: center;
+    margin-bottom: 50px; }
+    body .header .container {
+      padding: 30px, 0;
+      border-bottom: 1px solid #e5e5e5; }
+      body .header .container img {
+        width: 100px; }
+  body .main .container {
+    height: 400px;
+    width: 400px;
+    background-color: #003300;
+    margin-top: 60px;
+    opacity: .4; }
+    body .main .container h2 {
+      padding-bottom: 20px; }
+    body .main .container button {
+      margin-top: 30px; }
+    body .main .container .row {
+      margin-top: 15px; }
+      body .main .container .row a {
+        color: white; }
+
+/*# sourceMappingURL=login.css.map */
