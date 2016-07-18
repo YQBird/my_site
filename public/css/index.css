@@ -1,0 +1,119 @@
+/*nav {
+	z-index: 5;
+}*/
+.image {
+  height: 600px;
+  background: url('../img/njbg.jpg') no-repeat center center;
+  background-size: cover;
+  text-align: center;
+/*  position: relative;*/
+/*  top: -100px;*/
+}
+
+.image p{
+	position: relative;
+	top: 150px;
+	margin: 0 0 20px 0;
+	font-size: 40px;
+	color: white;
+}
+
+.main {
+	height:600px;
+	overflow:auto;
+}
+
+.page{
+	display: inline-block;
+}
+
+.row div a {
+	margin-top: 100px;
+}
+
+.footer{
+	height: 200px;
+	background-color: black;
+	color: white;
+}
+
+#info{
+	margin-top: 20px;
+}
+
+#info a img{
+	margin-top: 20px;
+}
+
+.PInfo{
+	font-size: 14px;
+	color:white;
+}
+
+.icon img{
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+	margin-right:10px;
+}
+
+.tab-list li{
+	display: inline-block;
+	margin-top: 40px;	
+}
+
+.tab-control{
+	background-color: #222222;
+	padding: 15px 25px;
+    color: white;
+    border: 1px solid black;
+    border-radius: 15px;
+
+}
+
+.tab-panel{
+	display: none;
+}
+
+.tab-panel.active{
+	max-width: 940px;
+	height: 400px;
+	display: block;
+	position: relative;
+	left: 40px;
+	top: 20px;
+}
+
+#self{
+	height: 400px;
+	width: 300px;
+}
+
+#RU{
+	width:60%;
+}
+
+.selfIntro{
+	font-family: cursive;
+    font-size: 20px;
+    vertical-align: center;
+    padding-top: 20px;
+}
+
+.education{
+	font-family: cursive;
+	font-size: 20px;
+    vertical-align: center;
+    padding-top: 20px;
+    padding-left: 40px;
+}
+
+#tab-3 p{
+	font-size: 30px;
+	font-family: cursive;
+}
+
+#tab-3 img{
+	width:300px;
+	height: 300px;
+}
