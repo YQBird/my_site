@@ -1,6 +1,28 @@
-/*nav {
-	z-index: 5;
-}*/
+.navbar-default {
+    background-color: black;
+    border-color: black;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: white;
+}
+
+.navbar-default .navbar-brand  {
+    font-size: 20px;
+}
+
+.navbar-default .navbar-brand:hover {
+	color:white;
+}
+
+.navbar-default .navbar-nav > .dropdown > ul > li >a {
+	
+	color:white;
+}
+.navbar-default .navbar-nav > .dropdown > ul {
+	background-color: black;
+}
+
 .image {
   height: 600px;
   background: url('../img/njbg.jpg') no-repeat center center;
