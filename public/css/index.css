@@ -147,12 +147,12 @@
 
 /* padding-bottom and top for image */
 .mfp-no-margins img.mfp-img {
-	padding: 0;
+	padding: 50;
 }
 /* position of shadow behind the image */
 .mfp-no-margins .mfp-figure:after {
-	top: 0;
-	bottom: 0;
+	top: 50;
+	bottom: 50;
 }
 /* padding for main container */
 .mfp-no-margins .mfp-container {
