@@ -1,5 +1,6 @@
 angular.module("myApp").factory('weatherData', function($http, $q) {
   var obj = {};
+  var googleAPI = "AIzaSyDv3ii9qMOZIfwaPws48ur5XA06_6eEoE4";
   var key = "0bde7a04603937fdbb08af760a85ee9b";
   var data = {};
   
