@@ -65,14 +65,11 @@
             <div class="center"></div>
           </div>
 <!--           </div> -->
-          <div class="weather col-md-6 col-sm-6 col-xs-12" ng-controller="weatherController">
-            <h3>CurrentTemp: {{data.main.temp}}</h3>
-            <h3>MinTemp: {{data.main.temp_min}}</h3>
-            <h3>MaxTemp: {{data.main.temp_max}}</h3>
-            <img ng-src="{{icon}}"></img>
-            <h3>Location: {{data.name}}</h3>
-            <h3>Sunrise: {{data.sys.sunrise}}</h3>
-            <h3>Sunset: {{data.sys.sunset}}</h3>
+          <div id="weather" class="weather col-md-6 col-sm-6 col-xs-12" ng-controller="weatherController">
+            <h1>{{data.name}}, {{data.sys.country}}</h1>
+            <h3>{{curtTemp}}°C<span><img ng-src="{{icon}}"></img></span></h3>
+            <h3>min-max: {{minTemp}}°C - {{maxTemp}}°C</h3>           
+            <h3>Sunrise - Sunset: {{sunRise}} - {{sunSet}}</h3>
           </div> 
         </div>
       </div>

@@ -19,6 +19,7 @@ angular.module("myApp").factory('weatherData', function($http, $q) {
           console.log(d);
           obj.data = d;
           console.log(data);
+          $("#weather").show();
           deffered.resolve();
         });
         

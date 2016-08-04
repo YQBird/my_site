@@ -216,5 +216,11 @@
     transform: translate(-50%, -50%);
     z-index: 6; }
 .api .container .row .weather{
-  text-align: right;
+  text-align: center;
+  display: none;
+}
+
+.api .container .row .weather img {
+  width: 80px;
+  height: 80px;
 }
