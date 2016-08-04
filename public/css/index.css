@@ -158,3 +158,60 @@
 .mfp-no-margins .mfp-container {
 	padding: 0;
 }
+
+.api .container {
+	width: 100%;
+	min-height: 450px;
+}
+/* css style for clock animation */
+.api .container .row .clock-container {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  min-height: 450px;
+  height: 100vh;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E5C38B; }
+
+.api .container .row .clock {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background-color: #6DB7C1;
+  border: 35px #0E475A solid;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+  position: relative; }
+  .api .container .row .clock .hand {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    transform-origin: center bottom;
+    border-radius: 40px; }
+  .api .container .row .clock .s-hand {
+    height: 155px;
+    width: 5px;
+    background-color: #D85534;
+    z-index: 5; }
+  .api .container .row .clock .m-hand {
+    height: 135px;
+    width: 10px;
+    background-color: #027C91;
+    z-index: 4; }
+  .api .container .row .clock .h-hand {
+    height: 100px;
+    width: 14px;
+    background-color: #0E475A;
+    z-index: 3; }
+  .api .container .row .clock .center {
+    background-color: #D85534;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 6; }
