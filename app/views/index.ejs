@@ -57,20 +57,23 @@
     <div class="api">
       <div class="container">
         <div class="row">
-          <div class="clock-container">
-            <div class="col-md-6 clock">
-              <div class="s-hand hand"></div>
-              <div class="m-hand hand"></div>
-              <div class="h-hand hand"></div>
-              <div class="center"></div>
-            </div>
-          </div>
-<!--           <div class="col-md-6 clock">
+<!--           <div class="clock-container"> -->
+          <div class="col-md-6 col-sm-6 col-xs-12 clock">
             <div class="s-hand hand"></div>
             <div class="m-hand hand"></div>
             <div class="h-hand hand"></div>
             <div class="center"></div>
-          </div> -->
+          </div>
+<!--           </div> -->
+          <div class="weather col-md-6 col-sm-6 col-xs-12" ng-controller="weatherController">
+            <h3>CurrentTemp: {{data.main.temp}}</h3>
+            <h3>MinTemp: {{data.main.temp_min}}</h3>
+            <h3>MaxTemp: {{data.main.temp_max}}</h3>
+            <img ng-src="{{icon}}"></img>
+            <h3>Location: {{data.name}}</h3>
+            <h3>Sunrise: {{data.sys.sunrise}}</h3>
+            <h3>Sunset: {{data.sys.sunset}}</h3>
+          </div> 
         </div>
       </div>
     </div>
@@ -114,6 +117,8 @@
     <script src="js/app.js"></script>
     <script src="js/controllers/mainController.js"></script>
     <script src="js/controllers/todoController.js"></script>
+    <script src="js/controllers/weatherController.js"></script>
+    <script src="js/services/weather.js"></script>
     <script src="js/shared/tab.js"></script>
     <script src="js/shared/popup.js"></script>
     <script src="js/shared/jquery.magnific-popup.js"></script>
