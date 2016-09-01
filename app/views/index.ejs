@@ -57,20 +57,8 @@
     <div class="api">
       <div class="container">
         <div class="row">
-<!--           <div class="clock-container"> -->
-          <div class="col-md-6 col-sm-6 col-xs-12 clock">
-            <div class="s-hand hand"></div>
-            <div class="m-hand hand"></div>
-            <div class="h-hand hand"></div>
-            <div class="center"></div>
-          </div>
-<!--           </div> -->
-          <div id="weather" class="weather col-md-6 col-sm-6 col-xs-12" ng-controller="weatherController">
-            <h1>{{data.name}}, {{data.sys.country}}</h1>
-            <h3>{{curtTemp}}°C<span><img ng-src="{{icon}}"></img></span></h3>
-            <h3>min-max: {{minTemp}}°C - {{maxTemp}}°C</h3>           
-            <h3>Sunrise - Sunset: {{sunRise}} - {{sunSet}}</h3>
-          </div> 
+          <directive-clock></directive-clock>
+          <directive-weather-report></directive-weather-report>
         </div>
       </div>
     </div>
@@ -94,13 +82,13 @@
               <p class="PInfo">{{personalInfo.Address}}</p>
               <p class="PInfo">{{personalInfo.Company}}</p>
               <a class="PInfo" href="#" >{{personalInfo.Email}}</a><br>
-              <a href="{{personalInfo.googleLink}}" class="icon">
+              <a href="" class="icon">
                 <img ng-src="{{personalInfo.googleIcon}}" />
               </a>
-              <a href="{{personalInfo.linkedInLink}}" class="icon">
+              <a href="" class="icon">
                 <img ng-src="{{personalInfo.linkedInIcon}}" />
               </a>
-              <a href="#/" class="icon"><img src="img/inIcon.png" /></a>
+              <a href="" class="icon"><img src="img/inIcon.png" /></a>
             </div>
 
           </div>
@@ -114,12 +102,12 @@
     <script src="js/app.js"></script>
     <script src="js/controllers/mainController.js"></script>
     <script src="js/controllers/todoController.js"></script>
-    <script src="js/controllers/weatherController.js"></script>
     <script src="js/services/weather.js"></script>
     <script src="js/shared/tab.js"></script>
     <script src="js/shared/popup.js"></script>
     <script src="js/shared/jquery.magnific-popup.js"></script>
     <script src="js/shared/jquery.magnific-popup.min.js"></script>
-    <script src="js/shared/clock.js"></script>
+    <script src="js/directives/directive-clock.js"></script>
+    <script src="js/directives/directive-weather-report.js"></script>
   </body>
 </html>

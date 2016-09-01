@@ -178,6 +178,7 @@
 .api .container .row .clock {
   width: 350px;
   height: 350px;
+  margin-right: 50px;
   border-radius: 50%;
   background-color: #6DB7C1;
   border: 35px #0E475A solid;
@@ -216,8 +217,11 @@
     transform: translate(-50%, -50%);
     z-index: 6; }
 .api .container .row .weather{
+  width: 360px;
+  margin-left: 50px;
   text-align: center;
   display: none;
+  float: right;
 }
 
 .api .container .row .weather img {
