@@ -1,0 +1,217 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  /* modify bootstrap */
+  /* foot style */
+  /* welcome page style, including image weather and clock animation */ }
+  html .navbar-default, body .navbar-default {
+    background-color: black;
+    border-color: black;
+    margin-bottom: 0px; }
+    html .navbar-default .navbar-brand, body .navbar-default .navbar-brand {
+      font-size: 20px; }
+    html .navbar-default .navbar-brand:hover, body .navbar-default .navbar-brand:hover {
+      color: white; }
+    html .navbar-default .navbar-nav > li > a:hover, body .navbar-default .navbar-nav > li > a:hover {
+      color: white; }
+    html .navbar-default .navbar-default .navbar-nav > .dropdown > ul, body .navbar-default .navbar-default .navbar-nav > .dropdown > ul {
+      background-color: black; }
+      html .navbar-default .navbar-default .navbar-nav > .dropdown > ul li > a, body .navbar-default .navbar-default .navbar-nav > .dropdown > ul li > a {
+        color: white; }
+  html .footer, body .footer {
+    height: 200px;
+    background-color: black;
+    color: white; }
+    html .footer #info, html .footer #info a img, body .footer #info, body .footer #info a img {
+      margin-top: 20px; }
+    html .footer .PInfo, body .footer .PInfo {
+      font-size: 14px;
+      color: white; }
+    html .footer .icon img, body .footer .icon img {
+      height: 30px;
+      width: 30px;
+      display: inline-block;
+      margin-right: 10px; }
+  html #mainContainer, body #mainContainer {
+    min-height: 600px;
+    /* background image */
+    /* clock animation */
+    /* photo style */
+    /* menu style */
+    /* about me page css */
+    /* todo list style */ }
+    html #mainContainer .image, body #mainContainer .image {
+      height: 600px;
+      background: url("../img/njbg.jpg") no-repeat center center;
+      background-size: cover;
+      text-align: center; }
+      html #mainContainer .image p, body #mainContainer .image p {
+        position: relative;
+        top: 150px;
+        margin: 0 0 20px 0;
+        font-size: 40px;
+        color: white; }
+    html #mainContainer .api .container, body #mainContainer .api .container {
+      width: 100%;
+      background-color: #E5C38B;
+      font-family: "Roboto", sans-serif;
+      margin: 0;
+      min-height: 450px;
+      height: 500px; }
+      html #mainContainer .api .container .row, body #mainContainer .api .container .row {
+        min-height: 450px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        html #mainContainer .api .container .row .clock, body #mainContainer .api .container .row .clock {
+          width: 350px;
+          height: 350px;
+          margin-right: 50px;
+          border-radius: 50%;
+          background-color: #6DB7C1;
+          border: 35px #0E475A solid;
+          box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+          position: relative; }
+          html #mainContainer .api .container .row .clock .hand, body #mainContainer .api .container .row .clock .hand {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -100%);
+            transform-origin: center bottom;
+            border-radius: 40px; }
+          html #mainContainer .api .container .row .clock .s-hand, body #mainContainer .api .container .row .clock .s-hand {
+            height: 155px;
+            width: 5px;
+            background-color: #D85534;
+            z-index: 5; }
+          html #mainContainer .api .container .row .clock .m-hand, body #mainContainer .api .container .row .clock .m-hand {
+            height: 135px;
+            width: 10px;
+            background-color: #027C91;
+            z-index: 4; }
+          html #mainContainer .api .container .row .clock .h-hand, body #mainContainer .api .container .row .clock .h-hand {
+            height: 100px;
+            width: 14px;
+            background-color: #0E475A;
+            z-index: 3; }
+          html #mainContainer .api .container .row .clock .center, body #mainContainer .api .container .row .clock .center {
+            background-color: #D85534;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 6; }
+        html #mainContainer .api .container .row .weather, body #mainContainer .api .container .row .weather {
+          width: 360px;
+          margin-left: 50px;
+          text-align: center;
+          display: none;
+          float: right; }
+          html #mainContainer .api .container .row .weather img, body #mainContainer .api .container .row .weather img {
+            width: 80px;
+            height: 80px; }
+    html #mainContainer .page, body #mainContainer .page {
+      display: inline-block;
+      margin-top: 100px; }
+      html #mainContainer .page .img-thumbnail, body #mainContainer .page .img-thumbnail {
+        width: 200px;
+        height: 150px; }
+    html #mainContainer #photoMenu, body #mainContainer #photoMenu {
+      height: 120px; }
+    html #mainContainer #photoContainer, body #mainContainer #photoContainer {
+      height: 600px; }
+    html #mainContainer .tab-list li, body #mainContainer .tab-list li {
+      display: inline-block;
+      margin-top: 40px; }
+      html #mainContainer .tab-list li .tab-control, body #mainContainer .tab-list li .tab-control {
+        background-color: #222222;
+        padding: 15px 25px;
+        color: white;
+        border: 1px solid black;
+        border-radius: 15px; }
+    html #mainContainer .tab-panel, body #mainContainer .tab-panel {
+      display: none; }
+    html #mainContainer .tab-panel.active, body #mainContainer .tab-panel.active {
+      max-width: 940px;
+      height: 400px;
+      display: block;
+      position: relative;
+      left: 40px;
+      top: 20px; }
+      html #mainContainer .tab-panel.active #self, body #mainContainer .tab-panel.active #self {
+        height: 400px;
+        width: 300px; }
+      html #mainContainer .tab-panel.active #RU, body #mainContainer .tab-panel.active #RU {
+        width: 60%; }
+      html #mainContainer .tab-panel.active .selfIntro, body #mainContainer .tab-panel.active .selfIntro {
+        font-family: cursive;
+        font-size: 20px;
+        vertical-align: center;
+        padding-top: 20px; }
+      html #mainContainer .tab-panel.active .education, body #mainContainer .tab-panel.active .education {
+        font-family: cursive;
+        font-size: 20px;
+        vertical-align: center;
+        padding-top: 20px;
+        padding-left: 40px; }
+    html #mainContainer #tab-3 p, body #mainContainer #tab-3 p {
+      font-size: 30px;
+      font-family: cursive; }
+    html #mainContainer #tab-3 img, body #mainContainer #tab-3 img {
+      width: 300px;
+      height: 300px; }
+    html #mainContainer #todoContainer, body #mainContainer #todoContainer {
+      width: 100%;
+      min-height: 600px;
+      background: url("../img/bg_td.jpg") no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      overflow: scroll; }
+      html #mainContainer #todoContainer #input, html #mainContainer #todoContainer #header span, body #mainContainer #todoContainer #input, body #mainContainer #todoContainer #header span {
+        display: inline-block;
+        align: center;
+        padding: 5px;
+        font-size: 15px; }
+      html #mainContainer #todoContainer #input, body #mainContainer #todoContainer #input {
+        margin-left: 40%; }
+      html #mainContainer #todoContainer h1, html #mainContainer #todoContainer h2, body #mainContainer #todoContainer h1, body #mainContainer #todoContainer h2 {
+        text-align: center;
+        font-family: "Comic Sans MS", cursive, sans-serif; }
+      html #mainContainer #todoContainer #taskToShow ol li, body #mainContainer #todoContainer #taskToShow ol li {
+        margin-left: 12%;
+        margin-right: 15%;
+        padding-top: 15px;
+        height: 50px;
+        border: 1px dashed black; }
+        html #mainContainer #todoContainer #taskToShow ol li input, body #mainContainer #todoContainer #taskToShow ol li input {
+          width: 50px;
+          margin-left: 15px; }
+        html #mainContainer #todoContainer #taskToShow ol li span, body #mainContainer #todoContainer #taskToShow ol li span {
+          vertical-align: center;
+          font-size: 17px;
+          font-family: "Lucida Console", Monaco, monospace; }
+        html #mainContainer #todoContainer #taskToShow ol li span.done-true, body #mainContainer #todoContainer #taskToShow ol li span.done-true {
+          color: red;
+          font-family: cursive;
+          text-decoration: line-through; }
+        html #mainContainer #todoContainer #taskToShow ol li span[contenteditable="true"], body #mainContainer #todoContainer #taskToShow ol li span[contenteditable="true"] {
+          background: gray;
+          padding: 3px; }
+      html #mainContainer #todoContainer #btn, body #mainContainer #todoContainer #btn {
+        text-align: center; }
+        html #mainContainer #todoContainer #btn #update, html #mainContainer #todoContainer #btn #remove, body #mainContainer #todoContainer #btn #update, body #mainContainer #todoContainer #btn #remove {
+          margin-top: 50px;
+          height: 50px;
+          width: auto;
+          border: 1px solid black;
+          border-radius: 15px;
+          /*  position: relative;
+            left:35%;*/
+          font-size: 17px; }
+
+/*# sourceMappingURL=style.css.map */

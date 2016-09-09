@@ -1,16 +1,15 @@
-angular.module('myApp').controller('mainController', ['$scope', function($scope){
+angular.module('myApp').controller('mainController', function($scope, $window){
     $scope.personalInfo = {
-    	"Name": "Qun Yan",
+    	"Name": "Mr Yan",
     	"Address": "231 Rutgers Road, Piscataway",
     	"Company": "Marlabs Inc",
-    	"Email": "yq1119apzz@gmail.com",
-    	"googleLink": "https://plus.google.com/u/0/111421746175562729308/posts",
+    	"googleLink": "https://www.google.com",
     	"googleIcon": "img/gooIcon.png",
-    	"linkedInLink": "https://www.linkedin.com/in/qun-yan-938854105?trk=nav_responsive_tab_profile",
+    	"linkedInLink": "https://www.linkedin.com",
     	"linkedInIcon": "img/fbIcon.png"
     };
     $scope.welcomeInfo = "(for i = 0; i < life.length; knowledge++)"
-    $scope.Name = "Qun Yan";
+
     $scope.timeFunc = function(){
     	var curt = new Date();
     	curt = curt.getHours();
@@ -21,5 +20,12 @@ angular.module('myApp').controller('mainController', ['$scope', function($scope)
     	} else {
     		return "Good afternoon"
     	}
+    };
+    $scope.logged = $window.localStorage.getItem('user');
+    $scope.username = $window.localStorage.getItem('user') ? $window.localStorage.getItem('user') : "Who are you?" ;
+    $scope.remove = function(){
+        $window.localStorage.removeItem('user');
+        $scope.username = "";
     }
-}]);
+
+});

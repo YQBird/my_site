@@ -1,45 +1,59 @@
-body{
-	color: #fff;
-    background: url(bg.jpg) no-repeat center center fixed; 
+#signUpContainer{
+	color: black;
+	height: 800px;
+    background: url(../img/register_bg.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-}
-.header {
-	text-align:center;
-	margin-bottom: 50px;
-	.container {
-	  padding: 30px, 0;
-	  border-bottom: 1px solid #e5e5e5;
-	  img{
-	    width: 100px;
-	  }
+    .header {
+		text-align:center;
+		margin-bottom: 50px;
+		.container {
+		  padding: 30px, 0;
+		  border-bottom: 1px solid #e5e5e5;
+		  img{
+		    width: 100px;
+		  }
+		}
 	}
-}
+	.main{
+		.container{
+			#userForm{
+				float:left;
+				min-width: 400px;
+			}
+			.btn{
+				background:rgba(0,240,190,0.25);
+				margin-top: 30px;
+				margin-bottom: 100px;
+			}
+			h1{
+				padding-left: 15px;
+			}
 
-.btn{
-	background:rgba(0,240,190,0.25);
-	margin-top: 30px;
-	margin-bottom: 100px;
-}
-
-.main{
-	container{
-
+		}
+		// .footer{
+		// 	.container{
+		// 	    padding: 20px 0;
+		// 	    border-top: 1px solid #e5e5e5;
+		// 	    background-color: white;
+		// 	    ul{
+		// 	        margin-left:0;
+		// 	    }
+		// 	    li{
+		// 	        display:inline-block;
+		// 	        margin-right: 15px;
+		// 	    }
+		// 	}
+		// }
 	}
+	
 }
 
-.footer{
-	.container{
-	    padding: 20px 0;
-	    border-top: 1px solid #e5e5e5;
-	    ul{
-	        margin-left:0;
-	    }
-	    li{
-	        display:inline-block;
-	        margin-right: 15px;
-	    }
-	}
-}
+
+
+
+
+
+

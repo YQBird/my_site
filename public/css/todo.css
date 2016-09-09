@@ -10,7 +10,9 @@ h1, h2{
 	font-size:15px;
 }
 
-body{
+#todoContainer{
+	width: 100%;
+	min-height: 600px;
     background: url('../img/bg_td.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;

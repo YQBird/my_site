@@ -103,6 +103,9 @@ exports.register = function(req, res, next) {
     }
 };
 
+
+
+
 exports.renderLogin = function(req, res, next) {
     if (!req.user) {
         res.render('login', {
